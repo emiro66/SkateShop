@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import skHeader from './components/skHeader.vue';
+import Likes from './components/pages/likePage.vue';
+import router from './router';
 </script>
 
 
@@ -7,7 +9,8 @@ import skHeader from './components/skHeader.vue';
   <v-app>
     <vMain>
       <skHeader></skHeader>
-      <p style="height: 3000px;"></p>
+      <RouterView/>
+      <!-- <p style="height: 3000px;"></p> -->
     </vMain>
   </v-app>
 </template>
