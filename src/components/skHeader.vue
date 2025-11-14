@@ -5,16 +5,20 @@ import { ref } from 'vue';
 
 const { x, y } = useWindowScroll()
 
-function goToLike () {
+function goToLike() {
   router.push("/likes")
 }
 
-function goToCart () {
+function goToCart() {
   router.push("/cart")
 }
 
-function goToMain () {
+function goToMain() {
   router.push("/")
+}
+
+function goToGiftPage() {
+  router.push("/gift")
 }
 
 // const skatePosition = ref()
@@ -22,13 +26,20 @@ function goToMain () {
 
 <template>
   <!-- <v-app-bar :elevation="2" scroll-behavior="hide"> -->
-  
-  <v-app-bar :elevation="2">
-  
 
-    <v-app-bar-title @click="goToMain">
-      Skate Shop
-      <v-icon color="red" :style="`margin-left: ${y/2}px; transform: rotateZ(${y}deg)`" icon="mdi-skateboarding"></v-icon>
+  <v-app-bar :elevation="2">
+
+
+    <v-app-bar-title>
+      <v-row>
+        <v-col cols=1>
+          <p @click="goToMain" class="title">Skate Shop</p>
+        </v-col>
+        <v-col>
+          <v-icon @click="goToGiftPage" color="red" :style="`margin-left: ${y / 2}px; transform: rotateZ(${y}deg)`"
+            icon="mdi-skateboarding"></v-icon>
+        </v-col>
+      </v-row>
     </v-app-bar-title>
 
     <!-- <v-btn icon="mdi-skateboard"></v-btn> -->
@@ -44,4 +55,8 @@ function goToMain () {
   </v-app-bar>
 </template>
 
-<style scoped></style>
+<style scoped>
+.title {
+  width: fit-content;
+}
+</style>

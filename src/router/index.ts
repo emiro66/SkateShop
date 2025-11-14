@@ -1,4 +1,5 @@
 import CartPage from '@/components/pages/cartPage.vue'
+import GiftPage from '@/components/pages/giftPage.vue'
 import likes from '@/components/pages/likePage.vue'
 import MainPage from '@/components/pages/mainPage.vue'
 
@@ -21,6 +22,12 @@ const router = createRouter({
       name: "cart",
       path: "/cart",
       component: CartPage
+    },
+
+    {
+      name: "gift",
+      path: "/gift",
+      component: GiftPage
     }
   ],
 })
