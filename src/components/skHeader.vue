@@ -21,7 +21,19 @@ function goToGiftPage() {
   router.push("/gift")
 }
 
-// const skatePosition = ref()
+
+const dynamicStyle = ref()
+
+const yy = ref(y)
+
+function dynamicScroll(){
+  if(yy.value <= 3049){
+    dynamicStyle.value = `margin-left: ${y / 2}px; transform: rotateZ(${y}deg)`
+  }
+}
+
+
+
 </script>
 
 <template>
@@ -36,12 +48,12 @@ function goToGiftPage() {
           <p @click="goToMain" class="title">Skate Shop</p>
         </v-col>
         <v-col>
-          <v-icon @click="goToGiftPage" color="red" :style="`margin-left: ${y / 2}px; transform: rotateZ(${y}deg)`"
+          <v-icon @click="goToGiftPage" color="red" :style="dynamicStyle"
             icon="mdi-skateboarding"></v-icon>
         </v-col>
       </v-row>
     </v-app-bar-title>
-
+    {{ y }}
     <!-- <v-btn icon="mdi-skateboard"></v-btn> -->
 
     <template v-slot:append>

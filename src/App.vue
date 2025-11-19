@@ -10,7 +10,6 @@ import router from './router';
     <vMain>
       <skHeader></skHeader>
       <RouterView/>
-      <!-- <p style="height: 3000px;"></p> -->
     </vMain>
   </v-app>
 </template>
