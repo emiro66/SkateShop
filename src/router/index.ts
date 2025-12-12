@@ -2,7 +2,6 @@ import CartPage from '@/components/pages/cartPage.vue'
 import GiftPage from '@/components/pages/giftPage.vue'
 import likes from '@/components/pages/likePage.vue'
 import MainPage from '@/components/pages/mainPage.vue'
-
 import { createRouter, createWebHistory } from 'vue-router'
 
 const router = createRouter({
@@ -28,8 +27,7 @@ const router = createRouter({
       name: "gift",
       path: "/gift",
       component: GiftPage
-    }
-  ],
+    }],
 })
 
 export default router

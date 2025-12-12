@@ -10,6 +10,11 @@ import skatesCards from '@/objects/skates';
 
 
 <template>
+   
+
+
+
+
     <v-row justify="center">
         <v-col cols="9">
             <h1 style="text-align: center">
