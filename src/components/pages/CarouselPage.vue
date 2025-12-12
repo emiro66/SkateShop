@@ -4,29 +4,23 @@ import slides from '@/objects/slides.ts'
 
 <template>
     <v-carousel class="carousel-slides">
-      <v-container v-for="slide in slides" class="product-card">
-                    <v-container class="image-container">
-                        <img :src="slide.image">
-      </v-container>
-    </v-container>
+      <v-carousel-item :src="slide.image" cover v-for="slide in slides">
+        <p class="text-slide text-center">{{ slide.text}}</p>
+        <v-btn class="button-slide " v-if="slide.button !=='' " >  {{ slide.button}}</v-btn>
+
+      </v-carousel-item>
     </v-carousel>
 </template>
 
 <style>
+  .button-slide button{
+    margin: auto;
+  }
 
 
-.card-list{
-    flex-wrap: wrap;
-
-}
-
-.product-card {
-
-    max-width: 100%;
-    max-height: 100%;
-
- 
-
+.text-slide {
+  font-size: 50px;
+  margin-top: 50px;
 }
 
 </style>
