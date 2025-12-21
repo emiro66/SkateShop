@@ -1,29 +1,28 @@
+import router from "@/router"
+
 const slides = [
 {
-     image: "src/assets/qweasd.jpeg",
-     text: "привет",
+     image: "src/assets/slider2.jpeg",
+     text: "Магазин кастомной одежды ",
      button: {
           text: "Написать",
           function: "",
      }
+},
 
+{
+     image: "src/assets/slider3.jpeg",
+     text: "Ты можешь предложить свои идеи в личку",
+     button: {
+          text: "Написать",
+          function: "",
+     }
 },
 {
-     image: "src/assets/slider.jpg",
+     image: "src/assets/qweasd.jpeg",
      button: ''
 },
-{
-     image: "src/assets/slider.jpg",
-     button: ''
-},
-{
-     image: "src/assets/slider.jpg",
-     button: ''
-},
-{
-     image: "src/assets/slider.jpg",
-     button: ''
-},
+
   ]
 
   export default slides
