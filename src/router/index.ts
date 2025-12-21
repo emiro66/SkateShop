@@ -42,12 +42,12 @@ const router = createRouter({
       path: "/form",
       component: FormPage
     },
-  {
+    {
       name: "Catalog",
       path: "/catalog",
       component: CatalogPage
     }
-  
+
   ],
 })
 

@@ -38,12 +38,13 @@ function goToCatalog() {
 
 :deep(.v-app-bar) {
   position: sticky !important;
-  top: 50px !important;
+  top: 63px !important;
   z-index: 1000 !important;
   padding: 0;
 }
 
 .sticky-header {
+  height: 1000vh;
   padding: 0;
   min-width: 100%;
 }
