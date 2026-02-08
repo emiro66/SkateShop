@@ -12,34 +12,30 @@ import ImageComponent from '../component/ImageComponent.vue';
 </script>
 
 
-<template >
- <v-col cols="12" class="pa-0">
-    
-    <v-row justify="center" class="back-row">
+<template>
+    <v-col cols="12" class="pa-0">
 
-        <!-- карусель -->
-        <ImageComponent></ImageComponent>
+        <v-row justify="center" class="back-row">
 
-        <catalogComponent/>
+            <!-- карусель -->
+            <ImageComponent></ImageComponent>
 
-        <ImageComponent></ImageComponent>
+            <catalogComponent />
 
-         <catalogComponent/>
+            <ImageComponent></ImageComponent>
+
+            <catalogComponent />
 
 
 
-    </v-row>
-</v-col>
+        </v-row>
+    </v-col>
 </template>
 
 
 
 <style scoped>
 .back-row {
-background-color: #ffffffc2;
+    background-color: #ffffffc2;
 }
-
-
-
-
 </style>

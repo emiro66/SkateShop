@@ -13,26 +13,25 @@ function goToCatalog() {
 </script>
 
 <template>
-    <v-col cols="12">
-            <v-container class="d-flex card-list justify-center pa-0">
-                <v-container v-for="card in skatesCards" class="product-card">
-                    <v-container class="image-container" @click="goToCard(card.id)">
-                        <img :src="card.image">
-                    </v-container>
-                    <v-container class="product-card-text">
-                        <p>{{ card.name }}</p>
-                        <p>{{ card.text }}</p>
-
-                    </v-container>
-
+    <v-col cols="10" class="pa-0 mt-10">
+        <v-row class="justify-center pa-0">
+            <v-col cols="3" v-for="card in skatesCards" class="product-card">
+                <img :src="card.image" class="image-container" @click="goToCard(card.id)">
+                <v-container class="product-card-text">
+                    <p>{{ card.name }}</p>
+                    <p>{{ card.text }}</p>
                 </v-container>
-            </v-container>
+
+            </v-col>
+        </v-row>
 
     </v-col>
 </template>
 
 <style scoped>
-
+.image-container {
+    min-width: 100%;
+}
 
 .btn-catalog {
     margin-left: 100vh;
@@ -66,21 +65,12 @@ img {
 
 }
 
-.product-card {
-    height: fit-content;
-    padding: 10px;
-    width: 30vh;
-    margin: 5px;
 
-
-
-}
 
 
 .product-card-text {
     text-align: center;
     margin: 0;
-    padding: 5px;
 
 
 

@@ -9,7 +9,7 @@ import router from './router';
 
 <template>
 
-  <v-app >
+  <v-app>
     <vMain>
       <v-col cols="10">
         <skHeader></skHeader>
@@ -26,6 +26,4 @@ import router from './router';
   margin: auto;
   height: 10000px;
 }
-
-
 </style>
