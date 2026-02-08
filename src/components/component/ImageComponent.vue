@@ -10,24 +10,28 @@ function goToForm() {
 
 <template>
 
-  <v-col cols="12" class="pa-0">
-
-    <v-container class="imeg-container position-relative pa-0 d-flex justify-center align-center" >
-      <img src="@/assets/skaters1.jpg" class="img-sale">
-           <div class="button-container position-absolute">
-            <h1 class="text-container">Cкидка на первый заказ 25%</h1>
+  <v-col cols="10" class="pa-0">
+    <v-container class="imeg-container pa-0 ">
+      <div class="button-container ">
+        <h1 class="text-container">Cкидка на первый заказ 25%</h1>
         <v-container class="button-slide" @click="goToForm">
           К заказам
         </v-container>
       </div>
-      </v-container>
+    </v-container>
   </v-col>
 
 </template>
 
 <style scoped>
-
-
+.imeg-container {
+  background-image: url(@/assets/skaters1.jpg), linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), ;
+  background-size: cover;
+  background-blend-mode: darken;
+  background-position: center;
+  height: 65vh;
+  backdrop-filter: brightness(70%);
+}
 
 .img-sale {
   filter: brightness(0.7);
@@ -42,9 +46,10 @@ function goToForm() {
   cursor: pointer;
 }
 
-.button-container  {
+.button-container {
   justify-self: center;
 }
+
 .text-container {
   color: rgb(255, 255, 255);
 }
@@ -59,5 +64,4 @@ function goToForm() {
 
 
 }
-
 </style>
