@@ -13,7 +13,7 @@ function goToCatalog() {
 </script>
 
 <template>
-    <v-col cols="15">
+    <v-col cols="12">
             <v-container class="d-flex card-list justify-center pa-0">
                 <v-container v-for="card in skatesCards" class="product-card">
                     <v-container class="image-container" @click="goToCard(card.id)">

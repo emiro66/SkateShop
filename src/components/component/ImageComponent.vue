@@ -10,7 +10,7 @@ function goToForm() {
 
 <template>
 
-  <v-col cols="15" class="pa-0">
+  <v-col cols="12" class="pa-0">
 
     <v-container class="imeg-container position-relative pa-0 d-flex justify-center align-center" >
       <img src="@/assets/skaters1.jpg" class="img-sale">
@@ -26,16 +26,14 @@ function goToForm() {
 </template>
 
 <style scoped>
-img{
-  min-width: 100%;
-  height: 100%;
-}
+
 
 
 .img-sale {
   filter: brightness(0.7);
+  width: 200vh;
   height: 65vh;
-   object-fit: cover;
+  object-fit: cover;
 }
 
 
