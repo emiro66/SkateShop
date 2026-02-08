@@ -26,15 +26,15 @@ function goToForm() {
 </template>
 
 <style scoped>
-img {
-  min-width: 100%;
-  height: 100%;
+.imeg-container {
+  height: 65vh;
+  overflow: hidden;
 }
 
 
 .img-sale {
   filter: brightness(0.7);
-  height: 65vh;
+  width: 100%;
   object-fit: cover;
 }
 
