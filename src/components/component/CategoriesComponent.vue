@@ -15,7 +15,7 @@ function goToCatalog() {
       <v-toolbar-title class="toolbar-button" @click="goToCatalog">Скейтборд</v-toolbar-title>
       <v-toolbar-title class="toolbar-button" @click="goToCatalog">Сумки</v-toolbar-title>
       <v-toolbar-title class="toolbar-button" @click="goToCatalog">Зипки</v-toolbar-title>
-
+      <v-toolbar-title class="toolbar-button" @click="goToCatalog">Майки</v-toolbar-title>
 
   </v-app-bar>
   </v-container>

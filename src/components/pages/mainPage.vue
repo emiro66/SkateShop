@@ -1,11 +1,8 @@
 <script setup lang="ts">
-import skatesCards from '@/objects/skates';
-import Carousel from '@/components/component/CarouselPage.vue';
-import CategoriesPage from '@/components/component/CategoriesPage.vue';
-import CardInfoPage from './CardInfoPage.vue';
-import router from '@/router';
-import DiscountOffer from '../component/DiscountOffer.vue';
+
+import DiscountOfferComponent from '../component/DiscountOfferComponent.vue';
 import catalogComponent from '../component/catalogComponent.vue';
+import ImageComponent from '../component/ImageComponent.vue';
 // const int = 1
 // const string = "1"
 // const булкево = false
@@ -15,32 +12,31 @@ import catalogComponent from '../component/catalogComponent.vue';
 </script>
 
 
-<template>
+<template >
+ <v-col cols="12" class="pa-0">
+    
+    <v-row justify="center" class="back-row">
 
-    <v-row justify="center">
         <!-- карусель -->
-        <Carousel></Carousel>
-       <!-- категории -->
-        <CategoriesPage></CategoriesPage>
-        <DiscountOffer></DiscountOffer>
+        <ImageComponent></ImageComponent>
 
-        <catalogComponent class="catalog"/>
+        <catalogComponent/>
+
+        <ImageComponent></ImageComponent>
+
+         <catalogComponent/>
 
 
 
     </v-row>
-
+</v-col>
 </template>
 
 
 
 <style scoped>
-
-
-
-.catalog{
-    position: absolute;
-    top: 80vh;
+.back-row {
+background-color: #ffffffc2;
 }
 
 

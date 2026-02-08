@@ -6,14 +6,26 @@ import router from './router';
 </script>
 
 
+
 <template>
-  <v-app>
+
+  <v-app >
     <vMain>
-      <skHeader></skHeader>
-      <RouterView/>
+      <v-col cols="10">
+        <skHeader></skHeader>
+        <RouterView />
+      </v-col>
     </vMain>
   </v-app>
+
 </template>
 
+
 <style scoped>
+.v-col {
+  margin: auto;
+  height: 10000px;
+}
+
+
 </style>

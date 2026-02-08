@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    sgvdf
+  
 </template>
 
 <style scoped>
