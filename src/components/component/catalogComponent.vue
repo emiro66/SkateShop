@@ -10,6 +10,10 @@ function goToCatalog() {
     router.push("/catalog")
 }
 
+function changeImage(first_image: string, second_image: string,) {
+
+}
+
 </script>
 
 <template>

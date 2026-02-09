@@ -7,6 +7,7 @@ export const useProductsStore = defineStore('product', () => {
     {
         name: "Кеды",
         image: "src/assets/deka1.png",
+        
         id: 1,
         text: "ghjgjkhklnjkbjk"
     },
@@ -15,6 +16,7 @@ export const useProductsStore = defineStore('product', () => {
         image: "src/assets/deka1.png",
         id: 2,
         text: "fdhdfjhfgtj"
+
     },
     {
         name: "Футболки",
@@ -31,7 +33,6 @@ export const useProductsStore = defineStore('product', () => {
         {
         name: "Кеды",
         image: "src/assets/vanscros.png",
-
         id: 1,
         text: "ghjgjkhklnjkbjk"
     },
@@ -54,10 +55,7 @@ export const useProductsStore = defineStore('product', () => {
         text: "ghjgjkhklnjkbjk"
     },
 
-
- 
-]
-)
+])
 
 const SaleCard = ref([
     {}

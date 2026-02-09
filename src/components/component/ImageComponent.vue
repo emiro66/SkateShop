@@ -29,6 +29,7 @@ function goToForm() {
 .imeg-container {
   height: 65vh;
   overflow: hidden;
+  min-width: 100%;
 }
 
 
