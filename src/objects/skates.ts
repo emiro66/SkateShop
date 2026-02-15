@@ -1,32 +1,36 @@
 const skatesCards = [
     {
         name: "Кеды",
-        image: "src/assets/vanscros.png",
+        image1: "src/assets/vanscros.png",
+        image2: "src/assets/vanscros2.png",
         id: 1,
         text: "ghjgjkhklnjkbjk"
     },
     {
         name: "Джинсы",
-        image: "src/assets/vanscros.png",
+        image1: "src/assets/vanscros.png",
+        image2: "src/assets/vanscros2.png",
         id: 2,
         text: "fdhdfjhfgtj"
     },
     {
         name: "Футболки",
-        image: "src/assets/vanscros.png",
+        image1: "src/assets/vanscros.png",
+        image2: "src/assets/vanscros2.png",
         id: 3,
         text: "fgdhfgj"
     },
     {
         name: "Кепки",
-        image: "src/assets/vanscros.png",
-        id: 3,
+        image1: "src/assets/vanscros.png",
+        image2: "src/assets/vanscros2.png",
+        id: 4,
         text: "ghjgjkhklnjkbjk"
     },
-    
 
 
- 
+
+
 ]
 
 

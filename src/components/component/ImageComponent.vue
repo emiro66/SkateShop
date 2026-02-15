@@ -58,7 +58,7 @@ function goToForm() {
 .button-slide {
   background-color: rgba(233, 233, 233, 0.548);
   width: fit-content;
-  border-radius: 20px;
+
   margin-top: 120px;
   padding: 10px 70px;
   font-size: 20px;
